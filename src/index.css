@@ -1,13 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  line-height: 1.5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  color: rgb(34, 34, 34);
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  background: linear-gradient(85.89deg, #49478c 7.82%, #9756ff 117.28%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+h4 {
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  font-size: 1.4rem;
+}
+
+.btn-btn {
+  background: linear-gradient(180deg, rgb(73, 71, 140), rgb(151, 86, 255));
+  width: fit-content;
+}
+
+.logo {
+  color: #28387e;
+}
+
+.btn-nav {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #6547a5;
+  color: #6547a5;
+}
+
+.bg-header {
+  background-image: url(./assets/TopHeaderbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.active {
+  color: rgb(227, 39, 39);
+}
+.cryto-users h4 {
+  color: #4f4f4f;
+}
+.cryto-users h2 {
+  color: #3c387f;
+}
+
+/* Card service section*/
+.card {
+  box-shadow: 0px 0px 100px rgba(222, 235, 254, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.card h3 {
+  font-size: 2rem;
+  border-bottom: 5px solid #495cef;
+  width: fit-content;
+}
+.card a {
+  color: rgb(0, 101, 242);
+}
+.card img {
+  width: 12.3rem;
+  display: grid;
+  margin: auto;
+  place-items: center;
+  aspect-ratio: 1/1;
+}
+
+.service-sec {
+  background-image: url(./assets/bg-service.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-card,
+.cryptoUpdate {
+  margin: 0 auto;
+  justify-content: center;
+  place-items: center;
+  width: 80%;
+}
+.cryptoUpdate h2 {
+  color: rgb(60, 56, 127);
+}
+.hero-header {
+  max-width: 100%;
+  width: 100vw;
+}
+
+.price-change {
+  box-shadow: 0px 0px 12px 0px #373f34;
+  padding: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3rem;
+}
+
+.appSec {
+  background-image: url(./assets/servicetwobg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.app img {
+  margin: 0 auto;
+  width: 17rem;
+  padding: 1rem;
+}
+
+.appStyle {
+  background: #fbfbfb;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.appStyle p {
+  color: #6c7a87;
+}
+.appStyle h3 {
+  margin-block: 1rem;
+}
+.roundStep {
+  color: #fff;
+
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.roundStep1 {
+  background-color: #206cd6;
+}
+.roundStep2 {
+  background-color: #85c4ff;
+}
+.roundStep3 {
+  background-color: #6547a5;
+}
+.roundStep4 {
+  background-color: #ce10bb;
 }
