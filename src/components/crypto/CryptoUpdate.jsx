@@ -20,18 +20,16 @@ const CryptoUpdate = () => {
 
     return (
         <div className="cryptoUpdate pt-20">
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col md:flex-row md:justify-between items-start">
                 <div>
                     <h4><span className={{ style: "borderBottom: 5px solid #9373ef;" }}>POPULAR</span> ASSETS</h4>
                     <h2 className="mt-5">Crypto Profit Potential</h2>
                 </div>
                 <div>
-
-
-                    <NavLink to="./Services.jsx">See Market <i className="fa-solid fa-arrow-right-long"></i></NavLink>
+                    <NavLink to="./Market.jsx">See Market <i className="fa-solid fa-arrow-right-long"></i></NavLink>
                 </div>
             </div>
-            <div className="coinUpdate flex lg:flex-row divide-x justify-between sm:flex-col mt-10">
+            <div className="coinUpdate flex lg:flex-row divide-x justify-between flex-col mt-10">
                 {coinUpdate.map((coin) => {
                     return <Coin key={coin.id} price={coin} name={coin} image={coin} priceChange={coin} />
                 })}

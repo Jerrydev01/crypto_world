@@ -10,6 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 10px;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 * {
@@ -55,6 +56,13 @@ p {
 a {
   font-size: 1.4rem;
 }
+a:hover {
+  background: linear-gradient(85.89deg, #49478c 7.82%, #9756ff 117.28%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 
 .btn-btn {
   background: linear-gradient(180deg, rgb(73, 71, 140), rgb(151, 86, 255));
@@ -70,6 +78,11 @@ a {
   border-radius: 0.5rem;
   border: 2px solid #6547a5;
   color: #6547a5;
+  width: fit-content;
+}
+
+.nav-ink li {
+  margin-bottom: 1rem;
 }
 
 .bg-header {
@@ -188,4 +201,113 @@ a {
 }
 .roundStep4 {
   background-color: #ce10bb;
+}
+.reviewBg {
+  background-color: #fafafa;
+  margin-top: 2rem;
+}
+.innerReview,
+.reviewOne {
+  color: #6c7a87;
+}
+.innerReview h3 {
+  font-size: 1.5rem;
+}
+.innerReview p {
+  font-size: 1.5rem;
+}
+.innerReview {
+  background-color: #fff;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-block: 2rem 3rem;
+}
+.btn-review {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+.avatarStyle {
+  position: relative;
+}
+.avatarStyle img {
+  width: 5rem;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  position: absolute;
+  right: 10%;
+  bottom: -3.5rem;
+}
+
+.ratings i {
+  background: linear-gradient(180deg, rgb(73, 71, 140), rgb(151, 86, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.coinReview img {
+  clip-path: circle();
+}
+
+.coinReview p {
+  font-size: 1.2rem;
+  padding-block: 1rem;
+}
+.coinReview h3 {
+  padding-block: 1rem;
+}
+
+.crypto-search {
+  margin: auto;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.crypto-search input {
+  width: max(50vw, 300px);
+  box-shadow: 0px 0px 12px 0px #373f34;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+}
+.crypto-search input:focus {
+  border: none;
+  outline: none;
+  color: rgb(66, 63, 63);
+}
+
+.get-app {
+  background-image: url(./assets/ctabg.png), url(./assets/ctabg3.png);
+  background-repeat: no-repeat;
+  background-position: center, bottom right;
+  background-size: cover, contain;
+}
+
+.img-cta {
+  width: 60%;
+}
+.cta {
+  background: linear-gradient(85.89deg, #49478c 7.82%, #9756ff 117.28%),
+    url(./assets/ctabg2.png);
+  color: #ffffff;
+  border-radius: 2rem;
+}
+footer {
+  background-image: url(./assets/footerbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer-sec p {
+  font-size: 1.4rem;
+}
+.footer-sec span {
+  margin: 0.2rem;
+  font-size: 1.4rem;
 }

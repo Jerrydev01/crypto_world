@@ -1,6 +1,7 @@
 import SharedLayout from './components/SharedLayout'
-import Services from './pages/Services'
+import Market from './pages/Market'
 import Home from './pages/Home'
+import News from './pages/News'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
@@ -11,7 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
-          <Route path="/Services.jsx" element={<Services />} />
+          <Route path="/Market.jsx" element={<Market />} />
+          <Route path="/News.jsx" element={<News />} />
         </Route>
       </Routes>
     </BrowserRouter>

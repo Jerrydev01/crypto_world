@@ -3,7 +3,7 @@ import AppMobile from '../../assets/appmobile1.png'
 
 const AppSec = () => {
     return (
-        <div className="app grid grid-cols-2 gap-10 cryptoUpdate ">
+        <div className="app grid lg:grid-cols-2 gap-10 cryptoUpdate ">
 
             <div className="app-one flex">
                 <div className="appStyle">
@@ -15,12 +15,14 @@ const AppSec = () => {
 
             </div>
             <div>
-                <div className="appStyle">
+                <div className="appStyle flex flex-col-reverse lg:flex-col">
                     <img src={AppMobile} alt="" />
-                    <h4>Step <span className="roundStep roundStep2">2</span></h4>
-                    <h3>Sign Up and Verify in
-                        10 minutes</h3>
-                    <p>Sign up with your email, verify your account by taking a photo of your KTP, SIM, or passport.</p>
+                    <div>
+                        <h4>Step <span className="roundStep roundStep2">2</span></h4>
+                        <h3>Sign Up and Verify in
+                            10 minutes</h3>
+                        <p>Sign up with your email, verify your account by taking a photo of your KTP, SIM, or passport.</p>
+                    </div>
                 </div>
 
             </div>
@@ -34,12 +36,14 @@ const AppSec = () => {
 
             </div>
             <div>
-                <div className="appStyle">
+                <div className="appStyle flex flex-col-reverse lg:flex-col">
                     <img src={AppMobile} alt="" />
-                    <h4>Step <span className="roundStep roundStep4">4</span></h4>
-                    <h3>Start Investing,
-                        No Additional FeesDownload and Install the App</h3>
-                    <p>Experience the easiest way to buy and sell crypto assets.</p>
+                    <div>
+                        <h4>Step <span className="roundStep roundStep4">4</span></h4>
+                        <h3>Start Investing,
+                            No Additional FeesDownload and Install the App</h3>
+                        <p>Experience the easiest way to buy and sell crypto assets.</p>
+                    </div>
                 </div>
 
             </div>

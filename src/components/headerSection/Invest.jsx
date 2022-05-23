@@ -2,7 +2,7 @@ import React from 'react'
 
 const Invest = () => {
     return (
-        <div className="grid grid-cols-3 divide-x items-baseline mt-10 justify-between" >
+        <div className="grid grid-cols-3 gap-4 divide-x items-baseline mt-10 justify-between" >
             <div className="cryto-users">
                 <h4>Founded in</h4>
                 <h3>2022</h3>

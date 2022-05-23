@@ -1,13 +1,15 @@
 import React from 'react'
 
-import ServicesSection from '../components/serviceSection/ServicesSection';
-import ServiceTwo from '../components/serviceSection/ServiceTwo'
+import MarketSection from '../components/marketSection/MarketSection';
+import ServiceTwo from '../components/marketSection/ServiceTwo'
+import Reviews from '../components/reviews/Reviews'
 
 const Home = () => {
     return (
         <>
-            <ServicesSection />
+            <MarketSection />
             <ServiceTwo />
+            <Reviews />
         </>
     )
 }

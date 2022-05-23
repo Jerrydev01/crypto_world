@@ -5,13 +5,13 @@ import AppSec from './AppSec'
 const ServiceTwo = () => {
     return (
         <section>
-            <div className="flex cryptoUpdate justify-between gap-10 pt-10">
-                <div className="">
+            <div className="flex cryptoUpdate justify-between flex-col lg:flex-row gap-10 pt-10">
+                <div className="text-center lg:text-left">
                     <h3>Start your investment.</h3>
                     <p>Start your first trade with these easy steps.</p>
                 </div>
-                <div className="grid grid-cols-3 divide-x items-center mt-10 gap-2" >
-                    <div className="cryto-users">
+                <div className="grid grid-cols-3 divide-x items-center md:mt-6 lg:mt-10 gap-2" >
+                    <div className="cryto-users ">
                         <h4>24h trading volume</h4>
                         <h3>$76 B</h3>
                     </div>
