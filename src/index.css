@@ -27,7 +27,7 @@ h5 {
 }
 
 h1 {
-  font-size: 3.8rem;
+  font-size: clamp(3rem, 5vw, 3.8rem);
   font-weight: bolder;
 }
 
