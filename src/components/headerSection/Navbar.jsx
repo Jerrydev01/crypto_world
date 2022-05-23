@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="logo flex gap-1 items-center z-20">
                 <img src={Logo} alt="logo" /><NavLink to="/">CryptoWorld</NavLink>
             </div>
-            <div onClick={() => setOpen(!open)} className="flex justify-end relative bottom-8 text-2xl lg:hidden cursor-pointer z-20">
+            <div onClick={() => setOpen(!open)} className="flex justify-end relative bottom-8 text-2xl lg:hidden cursor-pointer z-20 w-fit right-0 left-full">
                 <i className={open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></i>
             </div>
 
