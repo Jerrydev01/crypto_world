@@ -3,7 +3,7 @@ import AppMobile from '../../assets/appmobile1.png'
 
 const AppSec = () => {
     return (
-        <div className="app grid lg:grid-cols-2 gap-10 cryptoUpdate ">
+        <div className="app grid lg:grid-cols-2 gap-10 w-11/12 m-auto sm:w-4/6 ">
 
             <div className="app-one flex">
                 <div className="appStyle">
