@@ -1,3 +1,30 @@
+<div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/jerrydev01/portfolio/c03ffbcc5d26dc67a6a884b32cb4aae3cb3d7fdb/public/img/logo.svg" width="100" />
+</div>
+<h1 align="center">
+ CryptoWorld web app
+</h1>
+<h2 align="center">
+ <a href="https://cryptoworld01.netlify.app/" target="_blank">CryptoWorld</a>
+</h2>
+<p align="center">
+  CryptoWorld is an online crypto plateforms that gives users upto date information on cryto prices and news on the latest trends or news in the crypto space.
+  The first iteration of this webapp  <a href="https://cryptoworld01.netlify.app/" target="_blank">CryptoWorld</a> is built with React, React-router-dom for page navigation and Axios for fetching API from Coingecko. it will be hosted with <a href="https://netlify.com/" target="_blank">Netlify</a>
+</p>
+<p align="center">
+  Current iteration:
+  <a href="https://cryptoworld01.netlify.app/" target="_blank">v1</a>
+</p>
+<div align="center">
+  <img alt="Logo" src="https://github.com/Jerrydev01/portfolio/blob/beta/src/img/cryptoimg.png?raw=true" width="100%" />
+</div>
+
+## About Project (please read!)
+
+CryptoWorld is an online crypto plateforms that gives users upto date information on cryto prices and news on the latest trends or news in the crypto space.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
