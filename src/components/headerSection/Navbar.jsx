@@ -7,17 +7,20 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const toggle = () => setOpen(!open);
+    const hide = () => setOpen(false);
+    const show = () => setOpen(true);
     return (
         // navbar section
         <nav className="text-base lg:flex justify-between font-bold px-10 lg:px-20 pt-5 z-[200] fixed w-full bg-gradient-to-r from-[#C9DEFD] via-[#FFFFFE] to-[#F8ECCA] ">
             <div className="logo flex gap-1 items-center z-20">
                 <img src={Logo} alt="logo" /><NavLink to="/">CryptoWorld</NavLink>
             </div>
-            <div onClick={() => setOpen(!open)} className="flex justify-end relative bottom-8 text-2xl lg:hidden cursor-pointer z-20 w-fit right-0 left-full pr-10">
+            <div onClick={toggle} className="flex justify-end relative bottom-8 text-2xl lg:hidden cursor-pointer z-20 w-fit right-0 left-full pr-10">
                 <i className={open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></i>
             </div>
 
-            <ul className={`lg:flex items-center gap-4 pt-5 pb-16 lg:py-2 nav-ink text-center transition-all lg:transition-none z-[-50] duration-500 absolute lg:static ease-in bg-gradient-to-r from-[#C9DEFD] via-[#FFFFFE] to-[#F8ECCA] lg:bg-white w-full lg:w-auto left-0 ${open ? 'top-20' : 'left-[-100%]'}`}>
+            <ul onClick={toggle} onBlur={hide} onFocus={show} className={`lg:flex items-center gap-4 pt-5 pb-16 lg:py-2 nav-ink text-center transition-all lg:transition-none z-[-50] duration-500 absolute lg:static ease-in bg-gradient-to-r from-[#C9DEFD] via-[#FFFFFE] to-[#F8ECCA] lg:bg-white w-full lg:w-auto left-0 ${open ? 'top-20' : 'left-[-100%]'}`}>
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="./Market.jsx">Market</NavLink></li>
                 <li><NavLink to="./News.jsx">News</NavLink></li>
