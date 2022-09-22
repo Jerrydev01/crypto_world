@@ -43,6 +43,15 @@ h3 {
   background-clip: text;
   text-fill-color: transparent;
 }
+th {
+  font-size: 2rem;
+  font-weight: bolder;
+  background: linear-gradient(85.89deg, #49478c 7.82%, #9756ff 117.28%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 
 h4 {
   font-size: 1.1rem;
@@ -72,6 +81,7 @@ a:hover {
 .logo {
   color: #28387e;
 }
+
 
 .btn-nav {
   padding: 0.5rem;

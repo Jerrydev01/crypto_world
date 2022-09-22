@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 
 import Axios from 'axios'
-import CoinReview from './CoinReview'
+
 
 const ServiceCrypto = () => {
     const [cryptoService, setCryptoservice] = useState([]);
@@ -27,34 +27,61 @@ const ServiceCrypto = () => {
 
     return (
         <div className="bg-header">
-            <div className="w-[90%] lg:w-4/5 m-auto grid place-content-center py-10 lg:px-0">
+            <div >
 
                 <div className="crypto-search">
                     <h2 className="text-center text-[2rem] mb-5">Search A Currency</h2>
                     <form action="">
-                        <input className="input-search" type="text"
+                        <input className="input-search px-3" type="text"
                             onChange={handleSearchChange}
                             placeholder="Search"
                         />
                     </form>
+                </div>
+               <section className="text-gray-600 pt-7">
+                    <div className="container px-5 scroll-py-14 mx-auto">
+                        <div className="w-full mx-auto overflow-auto">
+                            <table className="table-auto w-full text-left whitespace-no-wrap">
+                                <thead className="text-[1.6rem] md:text-[2rem] font-bold">
+                                    <tr className=" ">
+                                        <th className="px-6 lg:px-4 py-3 title-font tracking-wider  text-gray-900 bg-gray-100 rounded-tl rounded-bl w-[4rem]"></th>
+                                        <th className="px-4 py-3 title-font tracking-wider text-gray-900 bg-gray-100 rounded-tl rounded-bl">Name</th>
+                                        <th className="px-4 py-3 title-font tracking-wider text-gray-900 bg-gray-100">Price</th>
+                                        <th className="px-4 py-3 title-font tracking-wider text-gray-900 bg-gray-100 whitespace-nowrap">Price Chg.</th>
+                                        <th className="px-4 py-3 title-font tracking-wider text-gray-900 bg-gray-100">MarketCap</th>
+                                        <th className="w-10 title-font tracking-wider text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"></th>
+                                    </tr>
+                                </thead>
 
-                </div>
-                <div className="flex  justify-between gap-4 mr-0 sm:mr-16 pt-7">
-                    <h3></h3>
-                    <h3 className="text-[1.6rem] md:text-[2rem]">Name</h3>
-                    <h3 className="text-[1.6rem] md:text-[2rem]">Price</h3>
-                    <h3 className="text-[1.6rem] md:text-[2rem]">Price Chg.</h3>
-                    <h3 className="hidden lg:block text-[1.6rem] md:text-[2rem]">MarketCap</h3>
-                </div>
-                <hr />
-                {filteredCoins.map((allCoins) => {
-                    return <CoinReview key={allCoins.id}
-                        name={allCoins.name}
-                        currentPrice={allCoins.current_price}
-                        priceChangePercentage={allCoins.price_change_percentage_24h}
-                        image={allCoins.image}
-                        marketCap={allCoins.market_cap} />
-                })}
+                                <tbody>
+                                    {filteredCoins.map((allCoins) => {
+                                        return (
+                                            <tr key={allCoins.id}>
+                                                <td className="px-2 py-3 text-lg">
+
+                                                    <img className="w-[4rem]"
+                                                        src={allCoins.image} alt={allCoins.image} />
+                                                </td>
+                                                <td className="px-4 py-3 text-lg font-semibold">{allCoins.name}</td>
+                                                <td className="px-4 py-3 text-lg text-gray-900">{allCoins.current_price}</td>
+                                                {
+                                                    allCoins.price_change_percentage_24h < 0
+                                                        ? <td className="px-4 py-3 text-lg  text-red-500 fa-solid fa-caret-down">{allCoins.price_change_percentage_24h.toFixed(2)}</td>
+                                                        : <td className="px-4 py-3 text-lg text-green-500 fa-solid fa-caret-up">{allCoins.price_change_percentage_24h.toFixed(2)}</td>
+                                                }
+                                                <td className="px-4 py-3 text-lg text-gray-900">{allCoins.market_cap}</td>
+
+                                            </tr>
+
+                                        )
+                                    })}
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </section>
+
 
             </div>
         </div>
